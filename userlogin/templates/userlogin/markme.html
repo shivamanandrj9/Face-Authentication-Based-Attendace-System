@@ -1,0 +1,10 @@
+{% extends 'userlogin/base.html' %}
+{% comment %} {% load crispy_forms_tags %} {% endcomment %}
+
+
+{% block content %}
+    <div class="container">
+            {% comment %} <a href="{% url 'upload_comp'%}" class="btn" style="color: white; background-color: #fd5e14;"type="submit" id="header-links"> Upload via Computer</a> {% endcomment %}
+            <a href="{% url 'upload_webcam_mod'%}" class="btn" style="color: white; background-color: #fd5e14;"type="submit" id="header-links"> Upload via Webcam</a>
+    </div>
+{% endblock %}
